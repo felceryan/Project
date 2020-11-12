@@ -11,7 +11,7 @@ int main(void){
     volume = (4.0f/3.0f) * 3.14159265359 * (radius * radius * radius);
     printf("The volume of a sphere with a radius of %.2f = %f\n",radius,volume); //2
 
-    printf("Enter an amount of money: ");
+    printf("Enter an amount of money: "); 
     scanf("%f", &amount);
 
     printf("Your amount with 5 perecent tax added is: $%.2f\n",amount * 1.05); //4
