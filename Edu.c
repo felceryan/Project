@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main(void){
-    int height, length, width, volume;
-    float profit, loss, net;
+    int weight, volume, height, width, length;
+    height = 12;
+    width = 16;
+    length = 16;
+    volume = height * width * length;
+    weight = (165 + volume) / 166;
 
-    height = 8;
-    length = 12;
-    width = 10;
-    volume = height * length * width;
-    profit = 10123.61f;
-    loss = 2131.51f;
-    net = profit - loss;
-    
-    printf("Volume is: %d.\nNet profit = %f", volume, net);
+    printf("Dimensions = %d x %d x %d.\n",height, width, length);
+    printf("Volume (cubic inches) = %d.\n",volume);
+    printf("Dimensional weight (pounds) = %d.\n",weight);
+
+
     return 0;
 }
