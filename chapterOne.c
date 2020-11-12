@@ -49,7 +49,7 @@ int main(void){
 
     printf("\nBalance remaining after first payment : %.2f", balance = (loan * (monthlyInterest + 1) - monthlyPayment) );
     printf("\nBalance remaining after second payment : %.2f", balance = (balance * (monthlyInterest + 1) - monthlyPayment) );
-    printf("\nBalance remaining after third payment : %.2f", balance = (balance * (monthlyInterest + 1) - monthlyPayment) );
+    printf("\nBalance remaining after third payment : %.2f", balance = (balance * (monthlyInterest + 1) - monthlyPayment) ); //8
 
     return 0;
 }
