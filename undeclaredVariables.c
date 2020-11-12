@@ -1,4 +1,5 @@
 #include <stdio.h>
+// answer = ( 3*q-p*p ) /3 ;
 int main(void){
     int x, y, z;
     float a, b, c;
