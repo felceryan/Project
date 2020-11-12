@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(void){
-    float radius, volume, amount;
-    int xValue;
+    float radius, volume, amount, lona, interest, monthly;
+    int xValue, dollarAmount, tenBill, oneBill, fiveBill, twentyBill;
 
     printf("        *\n       *\n      *\n*    *\n *  *\n   *"); // 1.
 
@@ -28,7 +28,20 @@ int main(void){
 
     // ((((3x + 2)x - 5)x - 1)x + 7)x - 6
 
-    printf("((((3x + 2)x - 5)x - 1)x + 7)x - 6 = %d\n", ((((3 * xValue + 2) * xValue - 5) * xValue - 1) * xValue + 7) * xValue - 6 );
+    printf("((((3x + 2)x - 5)x - 1)x + 7)x - 6 = %d\n", ((((3 * xValue + 2) * xValue - 5) * xValue - 1) * xValue + 7) * xValue - 6 ); //6
+
+    printf("\nEnter an amount of money: ");
+    scanf("%d", &dollarAmount);
+
+    twentyBill = dollarAmount / 20;
+    dollarAmount = dollarAmount - (20*twentyBill);
+    tenBill = dollarAmount / 10;
+    dollarAmount = dollarAmount - (10*tenBill);
+    fiveBill = dollarAmount / 5;
+    dollarAmount = dollarAmount - (5*fiveBill);
+    oneBill = dollarAmount / 1;
+
+    printf("\n$20 = %d\n$10 = %d\n$5 = %d\n$1 = %d\n",twentyBill, tenBill, fiveBill, oneBill); //7
 
     return 0;
 }
