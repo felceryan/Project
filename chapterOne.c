@@ -24,7 +24,11 @@ int main(void){
     + (2 * (xValue * xValue * xValue * xValue)) 
     - (5 * (xValue * xValue * xValue)) 
     - (xValue * xValue) 
-    + (7 * xValue) - 6) );
+    + (7 * xValue) - 6) ); //5
+
+    // ((((3x + 2)x - 5)x - 1)x + 7)x - 6
+
+    printf("((((3x + 2)x - 5)x - 1)x + 7)x - 6 = %d\n", ((((3 * xValue + 2) * xValue - 5) * xValue - 1) * xValue + 7) * xValue - 6 );
 
     return 0;
 }
