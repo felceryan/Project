@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(void){
-    float radius, volume, amount, lona, interest, monthly;
-    int xValue, dollarAmount, tenBill, oneBill, fiveBill, twentyBill;
+    float radius, volume, amount, loan, interest, monthlyPayment, monthlyInterest, balance;
+    int x, dollarAmount, tenBill, oneBill, fiveBill, twentyBill;
 
     printf("        *\n       *\n      *\n*    *\n *  *\n   *"); // 1.
 
@@ -17,18 +17,13 @@ int main(void){
     printf("Your amount with 5 perecent tax added is: $%.2f\n",amount * 1.05); //4
 
     printf("Enter a value for x : ");
-    scanf("%d", &xValue);
+    scanf("%d", &x);
 
-    printf("3x^5 + 2x^4 - 5x^3 - x^2 + 7x - 6 = %d\n",(
-    (3 * (xValue * xValue * xValue * xValue * xValue)) 
-    + (2 * (xValue * xValue * xValue * xValue)) 
-    - (5 * (xValue * xValue * xValue)) 
-    - (xValue * xValue) 
-    + (7 * xValue) - 6) ); //5
+    printf("3x^5 + 2x^4 - 5x^3 - x^2 + 7x - 6 = %d\n",((3 * (x * x * x * x * x)) + (2 * (x * x * x * x)) - (5 * (x * x * x)) - (x * x) + (7 * x) - 6) ); //5
 
     // ((((3x + 2)x - 5)x - 1)x + 7)x - 6
 
-    printf("((((3x + 2)x - 5)x - 1)x + 7)x - 6 = %d\n", ((((3 * xValue + 2) * xValue - 5) * xValue - 1) * xValue + 7) * xValue - 6 ); //6
+    printf("((((3x + 2)x - 5)x - 1)x + 7)x - 6 = %d\n", ((((3 * x + 2) * x - 5) * x - 1) * x + 7) * x - 6 ); //6
 
     printf("\nEnter an amount of money: ");
     scanf("%d", &dollarAmount);
@@ -42,6 +37,19 @@ int main(void){
     oneBill = dollarAmount / 1;
 
     printf("\n$20 = %d\n$10 = %d\n$5 = %d\n$1 = %d\n",twentyBill, tenBill, fiveBill, oneBill); //7
+
+    printf("\nEnter amount of loan: ");
+    scanf("%f", &loan);
+    printf("Enter interest rate: ");
+    scanf("%f", &interest);
+    printf("Enter monthly payment: ");
+    scanf("%f", &monthlyPayment);
+
+    monthlyInterest = (interest / 100) / 12;
+
+    printf("\nBalance remaining after first payment : %.2f", balance = (loan * (monthlyInterest + 1) - monthlyPayment) );
+    printf("\nBalance remaining after second payment : %.2f", balance = (balance * (monthlyInterest + 1) - monthlyPayment) );
+    printf("\nBalance remaining after third payment : %.2f", balance = (balance * (monthlyInterest + 1) - monthlyPayment) );
 
     return 0;
 }
