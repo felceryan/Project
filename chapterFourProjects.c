@@ -1,7 +1,9 @@
 #include <stdio.h>
 int main(void){
     int x, y, z, a,
-    oct1, oct2, oct3, oct4, oct5, total;
+    oct1, oct2, oct3, oct4, oct5,
+    i, i1, i2, i3, i4, i5, x1, x2, x3, x4, x5,
+    firstSum, secondSum, total;
     
     //printf("Enter a two digit number: ");
     //scanf("%1d%1d",&x ,&y);
@@ -33,6 +35,18 @@ int main(void){
     oct5 = x % 8; // 5th digit
 
     printf("Your number in octal is: %d%d%d%d%d\n",oct1 ,oct2 ,oct3 ,oct4 ,oct5); // 4
+
+    printf("Enter your 11 digit UPC code: ");
+    scanf("%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d",&i, &i1, &i2, &i3, &i4, &i5, &x1, &x2, &x3, &x4, &x5);
+
+    firstSum = i + i2 + i4 + x1 + x3 + x5;
+    secondSum = i1 + i3 + i5 + x2 + x4;
+
+    total = 9 - ((((firstSum * 3) + secondSum) - 1) % 10);
+
+    printf("Your check digit is: %d\n",total);
+
+
 
     return 0;
 }
