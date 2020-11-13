@@ -48,7 +48,7 @@ int main(void){
 
     resultDenom = denom1 * denom2;
 
-    printf("\nThe sum is : %d/%d\n",resultNum ,resultDenom);
+    printf("\nThe sum is : %d/%d\n",resultNum ,resultDenom); //6
 
 
     return 0;
