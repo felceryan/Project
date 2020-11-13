@@ -129,7 +129,11 @@ int main(void){
     printf("\nfour: %d\n",a * - b / c - d); // -4
     // 14
 
-    
+    i = 1; j = 2;
+    printf("\n%d\n",i += j); // i predict 3
+    printf("%d\n",i--); // i predict 3
+    printf("%d\n",i * j / i); // i predict 2
+    printf("%d\n", i % ++j); // i predict 2
 
     return 0;
 }
