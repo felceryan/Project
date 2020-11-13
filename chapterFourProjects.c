@@ -16,9 +16,11 @@ int main(void){
     y = x / 100; // 1st number
     z = x % 10; // third number
     a = (x % 100) / 10; // 2nd number
-    printf("The reversal is : %d%d%d\n",z, a, y);
+    printf("The reversal is : %d%d%d\n",z, a, y); // 2
 
-
+    printf("Enter a three digit number: ");
+    scanf("%1d%1d%1d",&x ,&y, &z);
+    printf("The reversal is: %d%d%d\n",z ,y ,x); // Now they want it // 3
 
     return 0;
 }
