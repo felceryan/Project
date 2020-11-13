@@ -2,7 +2,7 @@
 int main(void){
     int x, y, z, a,
     oct1, oct2, oct3, oct4, oct5,
-    i, i1, i2, i3, i4, i5, x1, x2, x3, x4, x5,
+    i, i1, i2, i3, i4, i5, i6, x1, x2, x3, x4, x5, x6,
     firstSum, secondSum, total;
     
     //printf("Enter a two digit number: ");
@@ -44,8 +44,17 @@ int main(void){
 
     total = 9 - ((((firstSum * 3) + secondSum) - 1) % 10);
 
-    printf("Your check digit is: %d\n",total);
+    printf("Your check digit is: %d\n",total); // 5
 
+    printf("\nEnter your 12 digit EAN code: ");
+    scanf("%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d",&i1, &i2, &i3, &i4, &i5, &i6, &x1, &x2, &x3, &x4, &x5, &x6);
+
+    firstSum = i2 + i4 + i6 + x2 + x4 + x6;
+    secondSum = i1 + i3 + i5 + x1 + x3 + x5;
+
+    total = 9 - ((((firstSum * 3) + secondSum) - 1) % 10);
+
+    printf("Your check digit is: %d\n",total); // 6
 
 
     return 0;
