@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(void){
-    int x, y, z, a;
+    int x, y, z, a,
+    oct1, oct2, oct3, oct4, oct5, total;
     
     //printf("Enter a two digit number: ");
     //scanf("%1d%1d",&x ,&y);
@@ -21,6 +22,17 @@ int main(void){
     printf("Enter a three digit number: ");
     scanf("%1d%1d%1d",&x ,&y, &z);
     printf("The reversal is: %d%d%d\n",z ,y ,x); // Now they want it // 3
+
+    printf("\nEnter a number between 0 and 32767: ");
+    scanf("%d",&x);
+    
+    oct1 = (((((x / 8) / 8)) / 8) / 8) % 8; // 1st digit
+    oct2 = ((((x / 8) / 8)) / 8) % 8; // 2nd digit
+    oct3 = (((x / 8) / 8)) % 8; // 3rd digit
+    oct4 = (x / 8) % 8; // 4th digit
+    oct5 = x % 8; // 5th digit
+
+    printf("Your number in octal is: %d%d%d%d%d\n",oct1 ,oct2 ,oct3 ,oct4 ,oct5); // 4
 
     return 0;
 }
