@@ -14,7 +14,7 @@ int main(void){
     printf("Enter an amount of money: "); 
     scanf("%f", &amount);
 
-    printf("Your amount with 5 perecent tax added is: $%.2f\n",amount * 1.05); //4
+    printf("Your amount with 5 %% tax added is: $%.2f\n",amount * 1.05); //4
 
     printf("Enter a value for x : ");
     scanf("%d", &x);
