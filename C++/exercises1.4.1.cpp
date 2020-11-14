@@ -21,12 +21,12 @@ int main(){
     unchangedOne = val;
     unchangedTwo = val2;
     while (val <= val2){
-        sum += val;
+        std::cout << val << std::endl;
         ++val;
-    }
+    } //3
 
-    std::cout << "Sum of " << unchangedOne << " to " << unchangedTwo
-    << " inclusive is " << sum << std::endl; //3
+    //std::cout << "Numbers inbetween " << unchangedOne << " to " << unchangedTwo
+    //<< " is " << sum << std::endl; //3
 
     return 0;
-}
+}5
