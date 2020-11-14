@@ -11,7 +11,7 @@ int main(){
     //1 
 
     std::cout << "Enter as many ISBN numbers that are the same: " << std::endl;
-    while(std::cin >> inputOne){
+    if(std::cin >> inputOne){
         sum = inputOne;
         while(std::cin >> inputTwo){
             sum += inputTwo;
