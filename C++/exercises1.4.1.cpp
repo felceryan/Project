@@ -16,7 +16,7 @@ int main(){
     } //2
 
     sum = 0, val = 0; int val2, unchangedOne, unchangedTwo;
-    std::cout << "\n\nEnter two numbers (Smalles number first):" << std::endl;
+    std::cout << "\n\nEnter two numbers (Smallest number first):" << std::endl;
     std::cin >> val >> val2;
     unchangedOne = val;
     unchangedTwo = val2;
