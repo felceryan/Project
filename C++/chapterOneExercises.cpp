@@ -17,7 +17,7 @@ int main(){
     // << " and " << v2;
     // << " is " << v1 + v2 << std::endl;
     // This is not legal because the 2nd and 3rd statement dont have std::cout as its left operand since you 
-    // did ; after the 1st statement
+    // did ; after the 1st statement. to fix it i would remove the ; from the 1st line.
 
 
 
