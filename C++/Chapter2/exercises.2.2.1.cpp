@@ -21,8 +21,9 @@ int main(){
     // Not legal because wage isn't declared before salary
     double wage = 9999.99, salary = wage; // fixed
 
-    int i = 3.14; // Legal but would be 3
-    //1
+    // int i = 3.14; 
+    // Legal but would be 3
+    // 1
 
     int local_int; // undefined
     std::string local_str; // empty or undefined
