@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 std::string global_str; // empty
