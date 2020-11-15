@@ -3,6 +3,7 @@
 // long = minimum 32 bits
 // long long = minimum 64 bits
 // short = minimum and maximum 16 bits
+// All depend on compiler
 // An unsigned type means that the value cannot be below 0
 // for example unsigned short minimum value becomes 0 and maximum 65536 (2^16)
 // whereas a signed can be negative or positive for example minimum value for signed short -32768 and maximum 32768
