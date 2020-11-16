@@ -31,8 +31,15 @@
 //2
 
 // i = ic;
-// Illegal unless was init at declaration.
+// Legal
 // p1 = p3;
-// Illegal, must be an address.
+// Illegal, pointers must be assigned addresses of objects not objects.
 // p1 = &ic;
-// TO BE CONTINUED
+// Illegal, to point to a const you must define it as 'const int * p1 = &ic;'
+// p3 = &ic;
+// Legal
+// p2 = p1;
+// Legal, unless p1 was a const, then it would need to be a const int *const p2 = p1;
+// ic = *p3;
+// Illegal, const objects can't be modified outside its definition.
+//3
