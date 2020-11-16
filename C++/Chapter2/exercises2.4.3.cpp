@@ -2,10 +2,11 @@
 // Low level const.
 
 // int *p1 = &v1, &r = v1;
-// No const level.
+// No const level. (&r is technically int &const &r = v1)
 
 // const int *p2 = &v2, *const p3 = &i, &r2 = v2;
 // p2 is a low level const, p3 is a high level const, r2 is not a const.
+// (&r2 is technically const int &const r2 = v2)
 //1
 
 // r1 = v2;
