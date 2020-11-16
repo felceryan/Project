@@ -23,7 +23,7 @@
 // int *p1, *const p2;
 // Illegal, all constants must be init' at declaration. (*p1 legal)
 // const int ic, &r = ic;
-// Illegal, all constants must be init' at declaration, &r must refer to a valid object.
+// Illegal, all constants must be init' at declaration, &r must refer to a legal object.
 // const int *const p3;
 // Illegal, all constants must be init' at declaration.
 // const int *p;
