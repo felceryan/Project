@@ -58,8 +58,7 @@ int main(){
 
     // const std::string s = "Keep out!";
     // for (auto &c : s) {}
-    // Invalid
-    // c is a const reference to 'K' basically.
+    // Valid
     //6
     
     return 0;
