@@ -58,7 +58,8 @@ int main(){
 
     // const std::string s = "Keep out!";
     // for (auto &c : s) {}
-    // Valid
+    // Valid unless you try doing c = 'S' for example thats wrong
+    // its a constant reference to a const
     //6
     
     return 0;
