@@ -3,7 +3,7 @@
 struct salesData{
     int bookNumber;
     int bookSold;
-    double bookPrice;;
+    double bookPrice;
     double bookRevenue;
 
 };
