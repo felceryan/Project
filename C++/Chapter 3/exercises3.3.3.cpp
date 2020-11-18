@@ -135,25 +135,25 @@
 //}
 // Maybe what they actually asking for.
 
-//int main(){
-//    std::vector<int> intVec;
-//    int inputValue;
-//    unsigned countModifer = 0;
-//
-//    while(std::cin >> inputValue){
-//        intVec.push_back(inputValue);
-//    }
-//
-//    for(decltype(intVec.size()) e = 0; e < intVec.size() - 1; ++e){
-//        if(intVec.size() - countModifer > e){
-//            ++countModifer;
-//            if(intVec.size() - countModifer != e){
-//                std::cout << "intVec[" << e << "] + intVec[" << intVec.size() - countModifer << "] = "
-//                << intVec[e] + intVec[intVec.size() - countModifer] << std::endl;
-//            }
-//        }  
-//    }
-//
-//    return 0;
-//}
+int main(){
+    std::vector<int> intVec;
+    int inputValue;
+    unsigned countModifer = 0;
+
+    while(std::cin >> inputValue){
+        intVec.push_back(inputValue);
+    }
+
+    for(decltype(intVec.size()) e = 0; e < intVec.size() - 1; ++e){
+        if(intVec.size() - countModifer > e){
+            ++countModifer;
+            if(intVec.size() - countModifer != e){
+                std::cout << "intVec[" << e << "] + intVec[" << intVec.size() - countModifer << "] = "
+                << intVec[e] + intVec[intVec.size() - countModifer] << std::endl;
+            }
+        }  
+    }
+
+    return 0;
+}
 //5
