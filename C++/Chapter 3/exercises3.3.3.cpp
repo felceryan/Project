@@ -123,8 +123,10 @@ int main(){
     for(decltype(intVec.size()) e = 0; e < intVec.size() - 1; ++e){
         if(intVec.size() - countModifer > e){
             ++countModifer;
-            std::cout << "intVec[" << e << "] + intVec[" << intVec.size() - countModifer << "] = "
-            << intVec[e] + intVec[intVec.size() - countModifer] << std::endl;
+            if(intVec.size() - countModifer != e){
+                std::cout << "intVec[" << e << "] + intVec[" << intVec.size() - countModifer << "] = "
+                << intVec[e] + intVec[intVec.size() - countModifer] << std::endl;
+            }
         }  
     }
 
