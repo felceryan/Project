@@ -40,5 +40,5 @@ int main(){
 // BECAUSE
 // Say you have a string x = "TEST";
 // and you did beg + end it would be basically
-// x[0] + x[5] and not x[4] because .end() does one past end of vector.
+// x[0] + x[5] and not x[4] because .end() does one past end of.
 // so calling x[5] is undefined.
