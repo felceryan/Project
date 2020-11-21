@@ -8,8 +8,8 @@
 // This program prints each character in ca until *cp is no longer a char.
 //1
 
-// because unless the pointers are pointing to the same object,
-// adding unrelated pointers is dumb.
+// Because you can only subtract pointers to find the mid point between them.
+// if you want move up from a pointer just add an integer to it as like an offset.
 //2 
 
 //#include <string>
