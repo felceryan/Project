@@ -62,13 +62,17 @@
 #include <cstring>
 #include <iostream>
 
+const char sArr[] = "HELLO";
+const char sArr2[] = "RYAN";
+
 int main(){
-    char sArr[] = "HELLO";
-    char sArr2[] = " RYAN";
     
-    char sArr3[6];
+    constexpr size_t totalSize = strlen(sArr) + strlen(" ") + strlen(sArr2) + 1;
+    
+    char sArr3[totalSize];
     
     strcpy(sArr3, sArr);
+    strcat(sArr3," ");
     strcat(sArr3, sArr2);
     
     std::cout << sArr3;
